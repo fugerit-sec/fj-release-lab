@@ -4,8 +4,8 @@
 	<groupId>org.fugerit.java.labs</groupId>
 	<artifactId>fj-release-lab</artifactId>
 	<packaging>jar</packaging>
-	<version>0.1.0</version>
-	<name>Liferay Portal Database All In One Support</name>
+	<version>0.1.1</version>
+	<name>fj-release-lab</name>
 	<description>Simple project to test release capabilities</description>
 	<url>https://www.fugerit.org</url>
 	<inceptionYear>2023</inceptionYear>
