@@ -12,7 +12,7 @@
 	<groupId>org.fugerit.java.labs</groupId>
 	<artifactId>fj-release-lab</artifactId>
 	<packaging>jar</packaging>
-	<version>0.2.0-rc.4</version>
+	<version>0.2.0-rc.5</version>
 
 	<name>fj-release-lab</name>
 	<description>Simple project to test release capabilities</description>
