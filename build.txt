@@ -1,0 +1,773 @@
+Apache Maven 3.9.2 (c9616018c7a021c1c39be70fb2843d6f5f9b8a1c)
+Maven home: /workspace/runtime/java/apache-maven-latest
+Java version: 11.0.18, vendor: Amazon.com Inc., runtime: /Users/mttfranci/workspace/runtime/java/amazon-corretto-11.0.18.1.jdk/Contents/Home
+Default locale: en_IT, platform encoding: UTF-8
+OS name: "mac os x", version: "13.5.1", arch: "aarch64", family: "mac"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.graph < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.util < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.event.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Created adapter factory; available factories [file-lock, rwlock-local, semaphore-local, noop]; available name mappers [discriminating, file-gav, file-hgav, file-static, gav, static]
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: color
+[DEBUG] Message styles: debug info warning error success failure strong mojo project
+[DEBUG] Reading global settings from /workspace/runtime/java/apache-maven-latest/conf/settings.xml
+[DEBUG] Reading user settings from /Users/mttfranci/.m2/settings.xml
+[DEBUG] Reading global toolchains from /workspace/runtime/java/apache-maven-latest/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /Users/mttfranci/.m2/toolchains.xml
+[DEBUG] Using local repository at /workspace/maven/local_repo
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /workspace/maven/local_repo
+[INFO] Scanning for projects...
+[DEBUG] Creating adapter using nameMapper 'gav' and factory 'rwlock-local'
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for repository.jboss.org (http://repository.jboss.org/nexus/content/groups/public/).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for eclipselink.repository (http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=474125, ConflictMarker.markTime=250500, ConflictMarker.nodeCount=169, ConflictIdSorter.graphTime=240333, ConflictIdSorter.topsortTime=126958, ConflictIdSorter.conflictIdCount=68, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4066750, ConflictResolver.conflictItemCount=142, DfDependencyCollector.collectTime=180814375, DfDependencyCollector.transformTime=6359542}
+[DEBUG] org.sonatype.plugins:nexus-staging-maven-plugin:jar:1.6.13
+[DEBUG]    org.sonatype.nexus.maven:nexus-common:jar:1.6.13:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.4:compile (version managed from default) (exclusions managed from default)
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.7:compile (version managed from default)
+[DEBUG]    com.google.guava:guava:jar:14.0.1:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0.4:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0.4:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:2.3.0:compile
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.4:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:2.3.0:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:no_aop:3.1.0:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.0.4:compile
+[DEBUG]    org.apache.maven:maven-compat:jar:3.0.4:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0.4:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0.4:compile
+[DEBUG]       org.apache.maven:maven-core:jar:3.0.4:compile (version managed from default)
+[DEBUG]          org.apache.maven:maven-settings-builder:jar:3.0.4:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:3.0.4:compile
+[DEBUG]          org.apache.maven:maven-aether-provider:jar:3.0.4:compile
+[DEBUG]             org.sonatype.aether:aether-spi:jar:1.13.1:compile
+[DEBUG]          org.sonatype.aether:aether-impl:jar:1.13.1:compile
+[DEBUG]          org.sonatype.aether:aether-util:jar:1.13.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile (version managed from default)
+[DEBUG]       org.apache.maven.wagon:wagon-provider-api:jar:2.2:compile
+[DEBUG]    org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.2:compile
+[DEBUG]    org.sonatype.nexus:nexus-client-core:jar:2.15.1-02:compile (exclusions managed from default)
+[DEBUG]       org.sonatype.nexus.plugins:nexus-restlet1x-model:jar:2.15.1-02:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:compile (version managed from default)
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]       com.intellij:annotations:jar:9.0.4:compile (version managed from default)
+[DEBUG]       commons-io:commons-io:jar:2.8.0:compile
+[DEBUG]       com.thoughtworks.xstream:xstream:jar:1.4.19:compile (version managed from default)
+[DEBUG]          io.github.x-stream:mxparser:jar:1.2.2:compile
+[DEBUG]             xmlpull:xmlpull:jar:1.1.3.1:compile
+[DEBUG]       joda-time:joda-time:jar:2.2:compile
+[DEBUG]       commons-lang:commons-lang:jar:2.6:compile
+[DEBUG]       commons-beanutils:commons-beanutils:jar:1.9.4:compile (version managed from default) (exclusions managed from default)
+[DEBUG]          commons-collections:commons-collections:jar:3.2.2:compile
+[DEBUG]       org.sonatype.sisu.siesta:siesta-client:jar:1.8:compile
+[DEBUG]          org.sonatype.sisu.siesta:siesta-common:jar:1.8:compile
+[DEBUG]             javax.ws.rs:jsr311-api:jar:1.1.1:compile
+[DEBUG]             com.sun.jersey:jersey-core:jar:1.17.1:compile
+[DEBUG]             javax.validation:validation-api:jar:1.1.0.Final:compile
+[DEBUG]          com.sun.jersey:jersey-client:jar:1.17.1:compile
+[DEBUG]          com.sun.jersey.contribs:jersey-apache-client4:jar:1.17.1:compile
+[DEBUG]       org.sonatype.sisu.siesta:siesta-jackson:jar:1.8:compile
+[DEBUG]          com.fasterxml.jackson.core:jackson-annotations:jar:2.13.2:compile (version managed from default)
+[DEBUG]          com.fasterxml.jackson.core:jackson-core:jar:2.13.2:compile (version managed from default)
+[DEBUG]          com.fasterxml.jackson.core:jackson-databind:jar:2.13.2.2:compile (version managed from default)
+[DEBUG]          com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.13.2:compile (version managed from default)
+[DEBUG]             com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.13.2:compile
+[DEBUG]          com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.13.2:compile (version managed from default)
+[DEBUG]             jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile
+[DEBUG]             jakarta.activation:jakarta.activation-api:jar:1.2.1:compile
+[DEBUG]       org.apache.httpcomponents:httpclient:jar:4.5.13:compile (version managed from default) (exclusions managed from default)
+[DEBUG]          commons-codec:commons-codec:jar:1.15:compile (version managed from default)
+[DEBUG]       org.apache.httpcomponents:httpcore:jar:4.4.15:compile (version managed from default)
+[DEBUG]       org.slf4j:jcl-over-slf4j:jar:1.7.36:compile (version managed from default)
+[DEBUG]       javax.inject:javax.inject:jar:1:compile (version managed from default)
+[DEBUG]    org.sonatype.spice.zapper:spice-zapper:jar:1.3:compile
+[DEBUG]       org.fusesource.hawtbuf:hawtbuf-proto:jar:1.9:compile
+[DEBUG]          org.fusesource.hawtbuf:hawtbuf:jar:1.9:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.24:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.15:compile
+[DEBUG]    org.sonatype.aether:aether-api:jar:1.13.1:compile
+[DEBUG]    ch.qos.logback:logback-core:jar:1.2.11:runtime
+[DEBUG]    ch.qos.logback:logback-classic:jar:1.2.11:runtime
+[DEBUG] Created new class realm extension>org.sonatype.plugins:nexus-staging-maven-plugin:1.6.13
+[DEBUG] Importing foreign packages into class realm extension>org.sonatype.plugins:nexus-staging-maven-plugin:1.6.13
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm extension>org.sonatype.plugins:nexus-staging-maven-plugin:1.6.13
+[DEBUG]   Included: org.sonatype.plugins:nexus-staging-maven-plugin:jar:1.6.13
+[DEBUG]   Included: org.sonatype.nexus.maven:nexus-common:jar:1.6.13
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.4
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.7
+[DEBUG]   Included: com.google.guava:guava:jar:14.0.1
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:2.3.0
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:no_aop:3.1.0
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.13.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.2
+[DEBUG]   Included: org.sonatype.nexus:nexus-client-core:jar:2.15.1-02
+[DEBUG]   Included: org.sonatype.nexus.plugins:nexus-restlet1x-model:jar:2.15.1-02
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: com.intellij:annotations:jar:9.0.4
+[DEBUG]   Included: commons-io:commons-io:jar:2.8.0
+[DEBUG]   Included: com.thoughtworks.xstream:xstream:jar:1.4.19
+[DEBUG]   Included: io.github.x-stream:mxparser:jar:1.2.2
+[DEBUG]   Included: xmlpull:xmlpull:jar:1.1.3.1
+[DEBUG]   Included: joda-time:joda-time:jar:2.2
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.6
+[DEBUG]   Included: commons-beanutils:commons-beanutils:jar:1.9.4
+[DEBUG]   Included: commons-collections:commons-collections:jar:3.2.2
+[DEBUG]   Included: org.sonatype.sisu.siesta:siesta-client:jar:1.8
+[DEBUG]   Included: org.sonatype.sisu.siesta:siesta-common:jar:1.8
+[DEBUG]   Included: javax.ws.rs:jsr311-api:jar:1.1.1
+[DEBUG]   Included: com.sun.jersey:jersey-core:jar:1.17.1
+[DEBUG]   Included: javax.validation:validation-api:jar:1.1.0.Final
+[DEBUG]   Included: com.sun.jersey:jersey-client:jar:1.17.1
+[DEBUG]   Included: com.sun.jersey.contribs:jersey-apache-client4:jar:1.17.1
+[DEBUG]   Included: org.sonatype.sisu.siesta:siesta-jackson:jar:1.8
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-annotations:jar:2.13.2
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-core:jar:2.13.2
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-databind:jar:2.13.2.2
+[DEBUG]   Included: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.13.2
+[DEBUG]   Included: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.13.2
+[DEBUG]   Included: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.13.2
+[DEBUG]   Included: jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3
+[DEBUG]   Included: jakarta.activation:jakarta.activation-api:jar:1.2.1
+[DEBUG]   Included: org.apache.httpcomponents:httpclient:jar:4.5.13
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.15
+[DEBUG]   Included: org.apache.httpcomponents:httpcore:jar:4.4.15
+[DEBUG]   Included: org.slf4j:jcl-over-slf4j:jar:1.7.36
+[DEBUG]   Included: org.sonatype.spice.zapper:spice-zapper:jar:1.3
+[DEBUG]   Included: org.fusesource.hawtbuf:hawtbuf-proto:jar:1.9
+[DEBUG]   Included: org.fusesource.hawtbuf:hawtbuf:jar:1.9
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.24
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.15
+[DEBUG]   Included: ch.qos.logback:logback-core:jar:1.2.11
+[DEBUG]   Included: ch.qos.logback:logback-classic:jar:1.2.11
+[DEBUG] Extension realms for project org.fugerit.java.labs:fj-release-lab:jar:0.2.0-rc.3: [ClassRealm[extension>org.sonatype.plugins:nexus-staging-maven-plugin:1.6.13, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc]]
+[DEBUG] Created new class realm project>org.fugerit.java.labs:fj-release-lab:0.2.0-rc.3
+[DEBUG] Populating class realm project>org.fugerit.java.labs:fj-release-lab:0.2.0-rc.3
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[project>org.fugerit.java.labs:fj-release-lab:0.2.0-rc.3, parent: ClassRealm[maven.api, parent: null]]
+[DEBUG] Extension realms for project org.fugerit.java:fj-bom:pom:1.3.2: [ClassRealm[extension>org.sonatype.plugins:nexus-staging-maven-plugin:1.6.13, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc]]
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[project>org.fugerit.java.labs:fj-release-lab:0.2.0-rc.3, parent: ClassRealm[maven.api, parent: null]]
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: org.fugerit.java.labs:fj-release-lab:jar:0.2.0-rc.3
+[DEBUG] Tasks:   [deploy]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] ----------------< org.fugerit.java.labs:fj-release-lab >----------------
+[INFO] Building fj-release-lab 0.2.0-rc.3
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       org.fugerit.java.labs:fj-release-lab:0.2.0-rc.3
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, runtime, test]
+[DEBUG] Repositories (dependencies): [redhat-ga-all-repository (https://maven.repository.redhat.com/ga/, default, releases), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [maven-default-http-blocker (http://0.0.0.0/, default, releases, blocked), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.codehaus.mojo:buildnumber-maven-plugin:3.1.0:create (default)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildNumberPropertiesFileLocation default-value="${basedir}/buildNumber.properties"/>
+  <buildNumberPropertyName default-value="buildNumber">${maven.buildNumber.buildNumberPropertyName}</buildNumberPropertyName>
+  <buildTaintedPropertyName default-value="buildIsTainted">${maven.buildNumber.buildTaintedPropertyName}</buildTaintedPropertyName>
+  <doCheck default-value="false">true</doCheck>
+  <doUpdate default-value="false">${maven.buildNumber.doUpdate}</doUpdate>
+  <failTheBuild default-value="true">${maven.buildNumber.failTheBuild}</failTheBuild>
+  <format>${maven.buildNumber.format}</format>
+  <getRevisionOnlyOnce default-value="false">${maven.buildNumber.getRevisionOnlyOnce}</getRevisionOnlyOnce>
+  <locale>${maven.buildNumber.locale}</locale>
+  <password>${password}</password>
+  <project default-value="${project}"/>
+  <reactorProjects default-value="${reactorProjects}"/>
+  <revisionOnScmFailure>${maven.buildNumber.revisionOnScmFailure}</revisionOnScmFailure>
+  <scmBranchPropertyName default-value="scmBranch">${maven.buildNumber.scmBranchPropertyName}</scmBranchPropertyName>
+  <scmConnectionUrl default-value="${project.scm.connection}"/>
+  <scmDeveloperConnectionUrl default-value="${project.scm.developerConnection}"/>
+  <scmDirectory default-value="${basedir}">${maven.buildNumber.scmDirectory}</scmDirectory>
+  <scmTag default-value="${project.scm.tag}"/>
+  <session default-value="${session}"/>
+  <settings default-value="${settings}"/>
+  <shortRevisionLength default-value="0">${maven.buildNumber.shortRevisionLength}</shortRevisionLength>
+  <skip default-value="false">${maven.buildNumber.skip}</skip>
+  <timestampFormat>${maven.buildNumber.timestampFormat}</timestampFormat>
+  <timestampPropertyName default-value="timestamp">${maven.buildNumber.timestampPropertyName}</timestampPropertyName>
+  <timezone default-value="">${maven.buildNumber.timestampTimeZone}</timezone>
+  <useLastCommittedRevision default-value="false">${maven.buildNumber.useLastCommittedRevision}</useLastCommittedRevision>
+  <username>${username}</username>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <annotationProcessorPaths>
+    <path>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.28</version>
+    </path>
+  </annotationProcessorPaths>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <parameters default-value="false">${maven.compiler.parameters}</parameters>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.11.0:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <annotationProcessorPaths>
+    <path>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.28</version>
+    </path>
+  </annotationProcessorPaths>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac-test"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <parameters default-value="false">${maven.compiler.parameters}</parameters>
+  <project default-value="${project}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">${maven.compiler.target}</target>
+  <testPath default-value="${project.testClasspathElements}"/>
+  <testRelease>${maven.compiler.testRelease}</testRelease>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <useModulePath default-value="true"/>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <additionalClasspathElements>${maven.test.additionalClasspath}</additionalClasspathElements>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <classpathDependencyExcludes>${maven.test.dependency.excludes}</classpathDependencyExcludes>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <dependenciesToScan>${dependenciesToScan}</dependenciesToScan>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <enableProcessChecker>${surefire.enableProcessChecker}</enableProcessChecker>
+  <encoding default-value="${project.reporting.outputEncoding}">${surefire.encoding}</encoding>
+  <excludeJUnit5Engines>${surefire.excludeJUnit5Engines}</excludeJUnit5Engines>
+  <excludedEnvironmentVariables>${surefire.excludedEnvironmentVariables}</excludedEnvironmentVariables>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <excludes>${surefire.excludes}</excludes>
+  <excludesFile>${surefire.excludesFile}</excludesFile>
+  <failIfNoSpecifiedTests default-value="true">${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests default-value="false">${failIfNoTests}</failIfNoTests>
+  <failOnFlakeCount default-value="0">${surefire.failOnFlakeCount}</failOnFlakeCount>
+  <forkCount default-value="1">${forkCount}</forkCount>
+  <forkNode>${surefire.forkNode}</forkNode>
+  <forkedProcessExitTimeoutInSeconds default-value="30">${surefire.exitTimeout}</forkedProcessExitTimeoutInSeconds>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <includeJUnit5Engines>${surefire.includeJUnit5Engines}</includeJUnit5Engines>
+  <includes>${surefire.includes}</includes>
+  <includesFile>${surefire.includesFile}</includesFile>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <parallelOptimized default-value="true">${parallelOptimized}</parallelOptimized>
+  <parallelTestsTimeoutForcedInSeconds>${surefire.parallel.forcedTimeout}</parallelTestsTimeoutForcedInSeconds>
+  <parallelTestsTimeoutInSeconds>${surefire.parallel.timeout}</parallelTestsTimeoutInSeconds>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <project default-value="${project}"/>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <projectBuildDirectory default-value="${project.build.directory}"/>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <rerunFailingTestsCount default-value="0">${surefire.rerunFailingTestsCount}</rerunFailingTestsCount>
+  <reuseForks default-value="true">${reuseForks}</reuseForks>
+  <runOrder default-value="filesystem">${surefire.runOrder}</runOrder>
+  <runOrderRandomSeed>${surefire.runOrder.random.seed}</runOrderRandomSeed>
+  <session default-value="${session}"/>
+  <shutdown default-value="exit">${surefire.shutdown}</shutdown>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipAfterFailureCount default-value="0">${surefire.skipAfterFailureCount}</skipAfterFailureCount>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">true</skipTests>
+  <suiteXmlFiles>${surefire.suiteXmlFiles}</suiteXmlFiles>
+  <systemPropertiesFile>${surefire.systemPropertiesFile}</systemPropertiesFile>
+  <tempDir default-value="surefire">${tempDir}</tempDir>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <threadCountClasses default-value="0">${threadCountClasses}</threadCountClasses>
+  <threadCountMethods default-value="0">${threadCountMethods}</threadCountMethods>
+  <threadCountSuites default-value="0">${threadCountSuites}</threadCountSuites>
+  <trimStackTrace default-value="false">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useModulePath default-value="true">${surefire.useModulePath}</useModulePath>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-jar-plugin:3.3.0:jar (default-jar)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <archive>
+    <manifest>
+      <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+    </manifest>
+    <manifestEntries>
+      <Implementation-Build>${buildNumber}</Implementation-Build>
+      <Bundle-License>http://www.apache.org/licenses/LICENSE-2.0.txt</Bundle-License>
+      <Bundle-Description>Simple project to test release capabilities</Bundle-Description>
+      <Bundle-Name>fj-release-lab</Bundle-Name>
+      <Bundle-ManifestVersion>4</Bundle-ManifestVersion>
+    </manifestEntries>
+  </archive>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <finalName default-value="${project.build.finalName}"/>
+  <forceCreation default-value="false">${maven.jar.forceCreation}</forceCreation>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skipIfEmpty default-value="false"/>
+  <useDefaultManifestFile default-value="false">${jar.useDefaultManifestFile}</useDefaultManifestFile>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-javadoc-plugin:3.5.0:jar (attach-javadocs)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <additionalJOption>${additionalJOption}</additionalJOption>
+  <applyJavadocSecurityFix default-value="true">${maven.javadoc.applyJavadocSecurityFix}</applyJavadocSecurityFix>
+  <attach default-value="true">${attach}</attach>
+  <author default-value="true">${author}</author>
+  <bootclasspath>${bootclasspath}</bootclasspath>
+  <bootclasspathArtifacts>${bootclasspathArtifacts}</bootclasspathArtifacts>
+  <bottom default-value="Copyright &amp;#169; {inceptionYear}&amp;#x2013;{currentYear} {organizationName}. All rights reserved.">${bottom}</bottom>
+  <breakiterator default-value="false">${breakiterator}</breakiterator>
+  <charset>${charset}</charset>
+  <classifier default-value="javadoc">${maven.javadoc.classifier}</classifier>
+  <debug default-value="false">${debug}</debug>
+  <defaultManifestFile default-value="${project.build.outputDirectory}/META-INF/MANIFEST.MF"/>
+  <destDir>${destDir}</destDir>
+  <detectJavaApiLink default-value="true">${detectJavaApiLink}</detectJavaApiLink>
+  <detectLinks default-value="false">${detectLinks}</detectLinks>
+  <detectOfflineLinks default-value="true">${detectOfflineLinks}</detectOfflineLinks>
+  <docencoding default-value="${project.reporting.outputEncoding}">${docencoding}</docencoding>
+  <docfilessubdirs default-value="false">${docfilessubdirs}</docfilessubdirs>
+  <doclet>${doclet}</doclet>
+  <docletArtifact>${docletArtifact}</docletArtifact>
+  <docletArtifacts>${docletArtifacts}</docletArtifacts>
+  <docletPath>${docletPath}</docletPath>
+  <doclint>${doclint}</doclint>
+  <doctitle default-value="${project.name} ${project.version} API">${doctitle}</doctitle>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <excludePackageNames>${excludePackageNames}</excludePackageNames>
+  <excludedocfilessubdir>${excludedocfilessubdir}</excludedocfilessubdir>
+  <extdirs>${extdirs}</extdirs>
+  <failOnError default-value="true">${maven.javadoc.failOnError}</failOnError>
+  <failOnWarnings default-value="false">${maven.javadoc.failOnWarnings}</failOnWarnings>
+  <finalName>${project.build.finalName}</finalName>
+  <footer>${footer}</footer>
+  <header>${header}</header>
+  <helpfile>${helpfile}</helpfile>
+  <includeDependencySources default-value="false"/>
+  <includeTransitiveDependencySources default-value="false"/>
+  <isOffline default-value="${settings.offline}"/>
+  <jarOutputDirectory>${project.build.directory}</jarOutputDirectory>
+  <javaApiLinks>${javaApiLinks}</javaApiLinks>
+  <javadocDirectory default-value="${basedir}/src/main/javadoc"/>
+  <javadocExecutable>${javadocExecutable}</javadocExecutable>
+  <javadocOptionsDir default-value="${project.build.directory}/javadoc-bundle-options"/>
+  <javadocVersion>${javadocVersion}</javadocVersion>
+  <keywords default-value="false">${keywords}</keywords>
+  <links>${links}</links>
+  <linksource default-value="false">${linksource}</linksource>
+  <localRepository>${localRepository}</localRepository>
+  <locale>${locale}</locale>
+  <maxmemory>${maxmemory}</maxmemory>
+  <minmemory>${minmemory}</minmemory>
+  <mojo default-value="${mojoExecution}"/>
+  <nocomment default-value="false">${nocomment}</nocomment>
+  <nodeprecated default-value="false">${nodeprecated}</nodeprecated>
+  <nodeprecatedlist default-value="false">${nodeprecatedlist}</nodeprecatedlist>
+  <nohelp default-value="false">${nohelp}</nohelp>
+  <noindex default-value="false">${noindex}</noindex>
+  <nonavbar default-value="false">${nonavbar}</nonavbar>
+  <nooverview default-value="false">${nooverview}</nooverview>
+  <noqualifier>${noqualifier}</noqualifier>
+  <nosince default-value="false">${nosince}</nosince>
+  <notimestamp default-value="false">${notimestamp}</notimestamp>
+  <notree default-value="false">${notree}</notree>
+  <offlineLinks>${offlineLinks}</offlineLinks>
+  <old default-value="false">${old}</old>
+  <outputDirectory default-value="${project.build.directory}/apidocs">${destDir}</outputDirectory>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <overview default-value="${basedir}/src/main/javadoc/overview.html">${overview}</overview>
+  <packagesheader>${packagesheader}</packagesheader>
+  <project default-value="${project}"/>
+  <quiet default-value="false">${quiet}</quiet>
+  <reactorProjects>${reactorProjects}</reactorProjects>
+  <release default-value="${maven.compiler.release}"/>
+  <repoSession default-value="${repositorySystemSession}"/>
+  <resourcesArtifacts>${resourcesArtifacts}</resourcesArtifacts>
+  <serialwarn default-value="false">${serialwarn}</serialwarn>
+  <session default-value="${session}"/>
+  <settings default-value="${settings}"/>
+  <show default-value="protected">${show}</show>
+  <skip default-value="false">${maven.javadoc.skip}</skip>
+  <skippedModules>${maven.javadoc.skippedModules}</skippedModules>
+  <source default-value="${maven.compiler.source}">${source}</source>
+  <sourceDependencyCacheDir default-value="${project.build.directory}/distro-javadoc-sources"/>
+  <sourcepath>${sourcepath}</sourcepath>
+  <sourcetab>${sourcetab}</sourcetab>
+  <splitindex default-value="false">${splitindex}</splitindex>
+  <staleDataPath default-value="${project.build.directory}/maven-javadoc-plugin-stale-data.txt">${staleDataPath}</staleDataPath>
+  <stylesheet default-value="java">${stylesheet}</stylesheet>
+  <stylesheetfile>${stylesheetfile}</stylesheetfile>
+  <subpackages>${subpackages}</subpackages>
+  <taglet>${taglet}</taglet>
+  <tagletArtifact>${tagletArtifact}</tagletArtifact>
+  <tagletArtifacts>${tagletArtifacts}</tagletArtifacts>
+  <tagletpath>${tagletpath}</tagletpath>
+  <taglets>${taglets}</taglets>
+  <tags>${tags}</tags>
+  <top>${top}</top>
+  <use default-value="true">${use}</use>
+  <useDefaultManifestFile default-value="false"/>
+  <useStandardDocletOptions default-value="true">${useStandardDocletOptions}</useStandardDocletOptions>
+  <validateLinks default-value="false">${validateLinks}</validateLinks>
+  <verbose default-value="false">${verbose}</verbose>
+  <version default-value="true">${version}</version>
+  <windowtitle default-value="${project.name} ${project.version} API">${windowtitle}</windowtitle>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-source-plugin:3.3.0:jar-no-fork (attach-sources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <attach default-value="true">${maven.source.attach}</attach>
+  <classifier default-value="sources">${maven.source.classifier}</classifier>
+  <defaultManifestFile default-value="${project.build.outputDirectory}/META-INF/MANIFEST.MF"/>
+  <excludeResources default-value="false">${maven.source.excludeResources}</excludeResources>
+  <finalName default-value="${project.build.finalName}"/>
+  <forceCreation default-value="false">${maven.source.forceCreation}</forceCreation>
+  <includePom default-value="false">${maven.source.includePom}</includePom>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <project default-value="${project}"/>
+  <reactorProjects default-value="${reactorProjects}"/>
+  <session default-value="${session}"/>
+  <skipSource default-value="false">${maven.source.skip}</skipSource>
+  <useDefaultExcludes default-value="true">${maven.source.useDefaultExcludes}</useDefaultExcludes>
+  <useDefaultManifestFile default-value="false">${maven.source.useDefaultManifestFile}</useDefaultManifestFile>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-gpg-plugin:3.1.0:sign (sign-artifacts)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <ascDirectory default-value="${project.build.directory}/gpg"/>
+  <defaultKeyring default-value="true">${gpg.defaultKeyring}</defaultKeyring>
+  <executable>${gpg.executable}</executable>
+  <homedir>${gpg.homedir}</homedir>
+  <interactive default-value="${settings.interactiveMode}"/>
+  <keyname>${gpg.keyname}</keyname>
+  <lockMode>${gpg.lockMode}</lockMode>
+  <passphrase>${gpg.passphrase}</passphrase>
+  <passphraseServerId default-value="gpg.passphrase">${gpg.passphraseServerId}</passphraseServerId>
+  <project default-value="${project}"/>
+  <publicKeyring>${gpg.publicKeyring}</publicKeyring>
+  <secretKeyring>${gpg.secretKeyring}</secretKeyring>
+  <settings default-value="${settings}"/>
+  <skip default-value="false">${gpg.skip}</skip>
+  <useAgent default-value="true">${gpg.useagent}</useAgent>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:3.1.0:install (default-install)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <installAtEnd default-value="false">${installAtEnd}</installAtEnd>
+  <pluginDescriptor default-value="${plugin}"/>
+  <project default-value="${project}"/>
+  <reactorProjects default-value="${reactorProjects}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.install.skip}</skip>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.sonatype.plugins:nexus-staging-maven-plugin:1.6.13:deploy (injected-nexus-deploy)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <altStagingDirectory>${altStagingDirectory}</altStagingDirectory>
+  <artifact default-value="${project.artifact}"/>
+  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
+  <autoDropAfterRelease default-value="true">${autoDropAfterRelease}</autoDropAfterRelease>
+  <autoReleaseAfterClose default-value="false">true</autoReleaseAfterClose>
+  <detectBuildFailures default-value="true">${detectBuildFailures}</detectBuildFailures>
+  <keepStagingRepositoryOnCloseRuleFailure>${keepStagingRepositoryOnCloseRuleFailure}</keepStagingRepositoryOnCloseRuleFailure>
+  <keepStagingRepositoryOnFailure>${keepStagingRepositoryOnFailure}</keepStagingRepositoryOnFailure>
+  <mavenSession default-value="${session}"/>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+  <offline default-value="${settings.offline}"/>
+  <packaging default-value="${project.packaging}"/>
+  <pluginArtifactId default-value="${plugin.artifactId}"/>
+  <pluginGroupId default-value="${plugin.groupId}"/>
+  <pluginVersion default-value="${plugin.version}"/>
+  <pomFile default-value="${project.file}"/>
+  <serverId>ossrh</serverId>
+  <skipLocalStaging>${skipLocalStaging}</skipLocalStaging>
+  <skipNexusStagingDeployMojo>${skipNexusStagingDeployMojo}</skipNexusStagingDeployMojo>
+  <skipRemoteStaging>${skipRemoteStaging}</skipRemoteStaging>
+  <skipStaging>${skipStaging}</skipStaging>
+  <skipStagingRepositoryClose>${skipStagingRepositoryClose}</skipStagingRepositoryClose>
+  <sslAllowAll default-value="false">${maven.wagon.http.ssl.allowall}</sslAllowAll>
+  <sslInsecure default-value="false">${maven.wagon.http.ssl.insecure}</sslInsecure>
+  <stagingDescription>${stagingDescription}</stagingDescription>
+  <stagingProfileId>${stagingProfileId}</stagingProfileId>
+  <stagingProgressPauseDurationSeconds default-value="3">${stagingProgressPauseDurationSeconds}</stagingProgressPauseDurationSeconds>
+  <stagingProgressTimeoutMinutes default-value="5">${stagingProgressTimeoutMinutes}</stagingProgressTimeoutMinutes>
+  <stagingRepositoryId>${stagingRepositoryId}</stagingRepositoryId>
+  <updateReleaseInfo>${updateReleaseInfo}</updateReleaseInfo>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=45042, ConflictMarker.markTime=27250, ConflictMarker.nodeCount=12, ConflictIdSorter.graphTime=8625, ConflictIdSorter.topsortTime=6000, ConflictIdSorter.conflictIdCount=7, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=181084, ConflictResolver.conflictItemCount=11, DfDependencyCollector.collectTime=16106791, DfDependencyCollector.transformTime=290750}
+[DEBUG] org.fugerit.java.labs:fj-release-lab:jar:0.2.0-rc.3
+[DEBUG]    org.projectlombok:lombok:jar:1.18.28:provided
+[DEBUG]    org.slf4j:slf4j-api:jar:2.0.7:compile
+[DEBUG]    org.apache.logging.log4j:log4j-api:jar:2.20.0:test
+[DEBUG]    org.apache.logging.log4j:log4j-core:jar:2.20.0:test
+[DEBUG]    org.apache.logging.log4j:log4j-slf4j2-impl:jar:2.20.0:test
+[DEBUG]    junit:junit:jar:4.13.2:test
+[DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] 
+[INFO] --- buildnumber:3.1.0:create (default) @ fj-release-lab ---
