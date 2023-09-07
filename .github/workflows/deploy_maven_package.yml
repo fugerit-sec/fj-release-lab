@@ -32,7 +32,5 @@ jobs:
         gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
     - name: Build with Maven
-      run: mvn -P full,coverage,metadata -B package --file pom.xml
-    # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
-    - name: Update dependency graph
-      uses: advanced-security/maven-dependency-submission-action@v3.0.2
+      run: mvn clean deploy -P doRelease --file pom.xml
+
