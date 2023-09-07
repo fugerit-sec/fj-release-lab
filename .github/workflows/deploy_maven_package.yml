@@ -26,11 +26,11 @@ jobs:
         java-version: '11'
         distribution: 'corretto'
         cache: maven
-    - name: Import GPG key
-      uses: crazy-max/ghaction-import-gpg@v5
+    - name: Release Maven package
+      uses: samuelmeuli/action-maven-publish@v1
       with:
         gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
-        passphrase: ${{ secrets.PASSPHRASE }}
-    - name: Build with Maven
-      run: mvn clean deploy -P doRelease --file pom.xml
-
+        gpg_passphrase: ${{ secrets.PASSPHRASE }}
+        nexus_username: ${{ secrets.OSS_USERNAME }}
+        nexus_password: ${{ secrets.OSS_PASSWORD }}
+        maven_args: -P doRelease
