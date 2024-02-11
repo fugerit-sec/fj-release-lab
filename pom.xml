@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.fugerit.java</groupId>
 		<artifactId>fj-bom</artifactId>
-		<version>1.4.6</version>
+		<version>1.6.0</version>
 		<relativePath></relativePath>
 	</parent>
 	
 	<groupId>org.fugerit.java.labs</groupId>
 	<artifactId>fj-release-lab</artifactId>
 	<packaging>jar</packaging>
-	<version>0.3.0-SNAPSHOT</version>
+	<version>0.3.1-rc.1</version>
 
 	<name>fj-release-lab</name>
 	<description>Simple project to test release capabilities</description>
